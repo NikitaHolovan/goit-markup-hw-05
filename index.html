@@ -62,9 +62,24 @@
           эффективные решения <br />
           для вашего бизнеса
         </h1>
-        <button type="button" class="primary-button button">
+        <button type="button" class="primary-button button" data-modal-open>
           Заказать услугу
         </button>
+        <div class="backdrop is-hidden" data-modal>
+          <div class="modal">
+            <p>
+              Lorem ipsum dolor sit, amet consectetur adipisicing elit. Placeat
+              alias commodi officiis perspiciatis in earum, ab ipsum quibusdam
+              quisquam quod facilis libero rerum molestiae iste cupiditate
+              aliquid eius ut animi.
+            </p>
+            <button class="button-modal button" data-modal-close>
+              <svg width="11" height="11">
+                <use href="./images/icons/icons.svg#icon-close"></use>
+              </svg>
+            </button>
+          </div>
+        </div>
       </section>
       <section class="section-benefits container">
         <h2 class="hidden-heading">Наши преимущества</h2>
@@ -402,5 +417,6 @@
         </div>
       </div>
     </footer>
+    <script src="./js/modal.js"></script>
   </body>
 </html>
